@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabriel Luciano, Caio Butkousky, Ruan Fernandes, João Torquato">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Link Telecomunicações</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Seção de navegação (menu do site) -->
+    <nav>
+        <!-- Logo da empresa, destacando o nome -->
+        <div class="logo">Click Link Telecom</div>
+        
+        <!-- Lista de links de navegação -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Cadastre-se</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção principal com destaque para a oferta -->
+    <header>
+        <!-- Overlay para melhorar o contraste do texto sobre a imagem de fundo -->
+        <div class="overlay">
+            <h1>Sua internet MAIS rápida do que nunca.</h1>
+            <h2>Conheça nossos Planos!</h2>
+            <p>Planos de até 400 Megas!</p>
+        </div>
+    </header>
+
+    <!-- Seção do formulário de cadastro -->
+    <section class="form-section">
+        <!-- Formulário com campos para cadastro de usuário -->
+        <form id="frmteste">
+            <fieldset>
+                <legend>Cadastre-se Agora</legend>
+                
+                <label for="txtNome">Nome:</label>
+                <input type="text" id="txtNome" name="Nome" placeholder="Digite o nome..." required>
+
+                <label for="txtSenha">Senha:</label>
+                <input type="password" id="txtSenha" name="Senha" maxlength="8" placeholder="Digite sua senha..." required>
+
+                <div class="gender-options">
+                    <label>Sexo:</label>
+                    <input type="radio" name="Sexo" value="M"> Masculino
+                    <input type="radio" name="Sexo" value="F"> Feminino
+                </div>
+
+                <label for="dt_chegada">Data de chegada:</label>
+                <input type="date" id="dt_chegada" name="dt_chegada">
+
+                <label for="valores">Escolha o valor:</label>
+                <select name="Valor" id="valores">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                </select>
+
+                <button type="submit">Confirmar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
